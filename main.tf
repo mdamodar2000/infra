@@ -5,7 +5,7 @@ region = "us-east-1"
 terraform {
   backend "remote" {
     hostname = "app.terraform.io"
-    organization = "demow2d2fd2e2vv2rev"
+    organization = "PRACTICE_123_MODEL"
 
     workspaces {
       name = "infra"
@@ -14,6 +14,6 @@ terraform {
 }
 
 resource "aws_instance" "three" {
-  ami           = "ami-0e2c8caa4b6378d8c"
+  ami           = "ami-05ab12222a9f39021"
   instance_type = "t2.micro"
 }
