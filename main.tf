@@ -1,11 +1,11 @@
 provider "aws" {
-region = "us-east-1"
+region = "ap-south-1"
 }
 
 terraform {
   backend "remote" {
     hostname = "app.terraform.io"
-    organization = "Kinnera"
+    organization = "Kundana"
 
     workspaces {
       name = "infra"
@@ -14,6 +14,6 @@ terraform {
 }
 
 resource "aws_instance" "three" {
-  ami           = "ami-0e449927258d45bc4"
+  ami           = "ami-0f1dcc636b69a6438"
   instance_type = "t2.micro"
 }
